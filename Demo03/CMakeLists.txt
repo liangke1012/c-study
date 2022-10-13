@@ -1,0 +1,10 @@
+include_directories(.)
+
+add_executable(inherit inherit.cpp)
+add_executable(demo2 demo2.cpp)
+add_executable(opertor opertor.cpp)
+add_executable(operator02 operator02.cpp)
+add_executable(operator03 operator03.cpp)
+add_executable(operator04 operator04.cpp)
+add_executable(operator05 operator05.cpp)
+add_executable(operator06 operator06.cpp)

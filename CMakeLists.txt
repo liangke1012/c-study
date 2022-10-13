@@ -1,0 +1,27 @@
+cmake_minimum_required(VERSION 3.23)
+project(liangkeDemo)
+
+set(CMAKE_CXX_STANDARD 14)
+
+ADD_SUBDIRECTORY(Demo01)
+ADD_SUBDIRECTORY(Demo02)
+ADD_SUBDIRECTORY(Demo03)
+ADD_SUBDIRECTORY(map)
+ADD_SUBDIRECTORY(virtual)
+ADD_SUBDIRECTORY(classDemo)
+
+add_executable(liangkeDemo main.cpp)
+add_executable(main main.cpp)
+add_executable(arraysDemo arraysDemo.cpp)
+add_executable(zhichuandi zhichuandi.cpp)
+add_executable(printDemo printDemo.cpp)
+add_executable(structDemo structDemo.cpp)
+add_executable(neicunModel neicunModel.cpp)
+add_executable(neicunModel1 neicunModel1.cpp)
+add_executable(sceref sceref.cpp)
+add_executable(cubes cubes.cpp)
+add_executable(strtref strtref.cpp)
+add_executable(strquote strquote.cpp)
+add_executable(auto auto.cpp)
+add_executable(staticDemo staticDemo.cpp)
+

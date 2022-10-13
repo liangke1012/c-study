@@ -1,0 +1,1398 @@
+## This file contains all the build statements describing the
+# compilation DAG.
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# 
+# Which is the root file.
+# =============================================================================
+
+# =============================================================================
+# Project: liangkeDemo
+# Configurations: Debug
+# =============================================================================
+
+#############################################
+# Minimal version of Ninja required by this file
+
+ninja_required_version = 1.5
+
+
+#############################################
+# Set configuration variable for custom commands.
+
+CONFIGURATION = Debug
+# =============================================================================
+# Include auxiliary files.
+
+
+#############################################
+# Include rules file.
+
+include CMakeFiles/rules.ninja
+
+# =============================================================================
+
+#############################################
+# Logical path to working directory; prefix for absolute paths.
+
+cmake_ninja_workdir = /Users/liangke/CLionProjects/liangkeDemo/cmake-build-debug/
+# =============================================================================
+# Object build statements for EXECUTABLE target liangkeDemo
+
+
+#############################################
+# Order-only phony target for liangkeDemo
+
+build cmake_object_order_depends_target_liangkeDemo: phony || CMakeFiles/liangkeDemo.dir
+
+build CMakeFiles/liangkeDemo.dir/main.cpp.o: CXX_COMPILER__liangkeDemo_Debug /Users/liangke/CLionProjects/liangkeDemo/main.cpp || cmake_object_order_depends_target_liangkeDemo
+  DEP_FILE = CMakeFiles/liangkeDemo.dir/main.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -std=gnu++14
+  OBJECT_DIR = CMakeFiles/liangkeDemo.dir
+  OBJECT_FILE_DIR = CMakeFiles/liangkeDemo.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target liangkeDemo
+
+
+#############################################
+# Link the executable liangkeDemo
+
+build liangkeDemo: CXX_EXECUTABLE_LINKER__liangkeDemo_Debug CMakeFiles/liangkeDemo.dir/main.cpp.o
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk
+  OBJECT_DIR = CMakeFiles/liangkeDemo.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = liangkeDemo
+  TARGET_PDB = liangkeDemo.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target main
+
+
+#############################################
+# Order-only phony target for main
+
+build cmake_object_order_depends_target_main: phony || CMakeFiles/main.dir
+
+build CMakeFiles/main.dir/main.cpp.o: CXX_COMPILER__main_Debug /Users/liangke/CLionProjects/liangkeDemo/main.cpp || cmake_object_order_depends_target_main
+  DEP_FILE = CMakeFiles/main.dir/main.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -std=gnu++14
+  OBJECT_DIR = CMakeFiles/main.dir
+  OBJECT_FILE_DIR = CMakeFiles/main.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target main
+
+
+#############################################
+# Link the executable main
+
+build main: CXX_EXECUTABLE_LINKER__main_Debug CMakeFiles/main.dir/main.cpp.o
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk
+  OBJECT_DIR = CMakeFiles/main.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = main
+  TARGET_PDB = main.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target arraysDemo
+
+
+#############################################
+# Order-only phony target for arraysDemo
+
+build cmake_object_order_depends_target_arraysDemo: phony || CMakeFiles/arraysDemo.dir
+
+build CMakeFiles/arraysDemo.dir/arraysDemo.cpp.o: CXX_COMPILER__arraysDemo_Debug /Users/liangke/CLionProjects/liangkeDemo/arraysDemo.cpp || cmake_object_order_depends_target_arraysDemo
+  DEP_FILE = CMakeFiles/arraysDemo.dir/arraysDemo.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -std=gnu++14
+  OBJECT_DIR = CMakeFiles/arraysDemo.dir
+  OBJECT_FILE_DIR = CMakeFiles/arraysDemo.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target arraysDemo
+
+
+#############################################
+# Link the executable arraysDemo
+
+build arraysDemo: CXX_EXECUTABLE_LINKER__arraysDemo_Debug CMakeFiles/arraysDemo.dir/arraysDemo.cpp.o
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk
+  OBJECT_DIR = CMakeFiles/arraysDemo.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = arraysDemo
+  TARGET_PDB = arraysDemo.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target zhichuandi
+
+
+#############################################
+# Order-only phony target for zhichuandi
+
+build cmake_object_order_depends_target_zhichuandi: phony || CMakeFiles/zhichuandi.dir
+
+build CMakeFiles/zhichuandi.dir/zhichuandi.cpp.o: CXX_COMPILER__zhichuandi_Debug /Users/liangke/CLionProjects/liangkeDemo/zhichuandi.cpp || cmake_object_order_depends_target_zhichuandi
+  DEP_FILE = CMakeFiles/zhichuandi.dir/zhichuandi.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -std=gnu++14
+  OBJECT_DIR = CMakeFiles/zhichuandi.dir
+  OBJECT_FILE_DIR = CMakeFiles/zhichuandi.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target zhichuandi
+
+
+#############################################
+# Link the executable zhichuandi
+
+build zhichuandi: CXX_EXECUTABLE_LINKER__zhichuandi_Debug CMakeFiles/zhichuandi.dir/zhichuandi.cpp.o
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk
+  OBJECT_DIR = CMakeFiles/zhichuandi.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = zhichuandi
+  TARGET_PDB = zhichuandi.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target printDemo
+
+
+#############################################
+# Order-only phony target for printDemo
+
+build cmake_object_order_depends_target_printDemo: phony || CMakeFiles/printDemo.dir
+
+build CMakeFiles/printDemo.dir/printDemo.cpp.o: CXX_COMPILER__printDemo_Debug /Users/liangke/CLionProjects/liangkeDemo/printDemo.cpp || cmake_object_order_depends_target_printDemo
+  DEP_FILE = CMakeFiles/printDemo.dir/printDemo.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -std=gnu++14
+  OBJECT_DIR = CMakeFiles/printDemo.dir
+  OBJECT_FILE_DIR = CMakeFiles/printDemo.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target printDemo
+
+
+#############################################
+# Link the executable printDemo
+
+build printDemo: CXX_EXECUTABLE_LINKER__printDemo_Debug CMakeFiles/printDemo.dir/printDemo.cpp.o
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk
+  OBJECT_DIR = CMakeFiles/printDemo.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = printDemo
+  TARGET_PDB = printDemo.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target structDemo
+
+
+#############################################
+# Order-only phony target for structDemo
+
+build cmake_object_order_depends_target_structDemo: phony || CMakeFiles/structDemo.dir
+
+build CMakeFiles/structDemo.dir/structDemo.cpp.o: CXX_COMPILER__structDemo_Debug /Users/liangke/CLionProjects/liangkeDemo/structDemo.cpp || cmake_object_order_depends_target_structDemo
+  DEP_FILE = CMakeFiles/structDemo.dir/structDemo.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -std=gnu++14
+  OBJECT_DIR = CMakeFiles/structDemo.dir
+  OBJECT_FILE_DIR = CMakeFiles/structDemo.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target structDemo
+
+
+#############################################
+# Link the executable structDemo
+
+build structDemo: CXX_EXECUTABLE_LINKER__structDemo_Debug CMakeFiles/structDemo.dir/structDemo.cpp.o
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk
+  OBJECT_DIR = CMakeFiles/structDemo.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = structDemo
+  TARGET_PDB = structDemo.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target neicunModel
+
+
+#############################################
+# Order-only phony target for neicunModel
+
+build cmake_object_order_depends_target_neicunModel: phony || CMakeFiles/neicunModel.dir
+
+build CMakeFiles/neicunModel.dir/neicunModel.cpp.o: CXX_COMPILER__neicunModel_Debug /Users/liangke/CLionProjects/liangkeDemo/neicunModel.cpp || cmake_object_order_depends_target_neicunModel
+  DEP_FILE = CMakeFiles/neicunModel.dir/neicunModel.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -std=gnu++14
+  OBJECT_DIR = CMakeFiles/neicunModel.dir
+  OBJECT_FILE_DIR = CMakeFiles/neicunModel.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target neicunModel
+
+
+#############################################
+# Link the executable neicunModel
+
+build neicunModel: CXX_EXECUTABLE_LINKER__neicunModel_Debug CMakeFiles/neicunModel.dir/neicunModel.cpp.o
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk
+  OBJECT_DIR = CMakeFiles/neicunModel.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = neicunModel
+  TARGET_PDB = neicunModel.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target neicunModel1
+
+
+#############################################
+# Order-only phony target for neicunModel1
+
+build cmake_object_order_depends_target_neicunModel1: phony || CMakeFiles/neicunModel1.dir
+
+build CMakeFiles/neicunModel1.dir/neicunModel1.cpp.o: CXX_COMPILER__neicunModel1_Debug /Users/liangke/CLionProjects/liangkeDemo/neicunModel1.cpp || cmake_object_order_depends_target_neicunModel1
+  DEP_FILE = CMakeFiles/neicunModel1.dir/neicunModel1.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -std=gnu++14
+  OBJECT_DIR = CMakeFiles/neicunModel1.dir
+  OBJECT_FILE_DIR = CMakeFiles/neicunModel1.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target neicunModel1
+
+
+#############################################
+# Link the executable neicunModel1
+
+build neicunModel1: CXX_EXECUTABLE_LINKER__neicunModel1_Debug CMakeFiles/neicunModel1.dir/neicunModel1.cpp.o
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk
+  OBJECT_DIR = CMakeFiles/neicunModel1.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = neicunModel1
+  TARGET_PDB = neicunModel1.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target sceref
+
+
+#############################################
+# Order-only phony target for sceref
+
+build cmake_object_order_depends_target_sceref: phony || CMakeFiles/sceref.dir
+
+build CMakeFiles/sceref.dir/sceref.cpp.o: CXX_COMPILER__sceref_Debug /Users/liangke/CLionProjects/liangkeDemo/sceref.cpp || cmake_object_order_depends_target_sceref
+  DEP_FILE = CMakeFiles/sceref.dir/sceref.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -std=gnu++14
+  OBJECT_DIR = CMakeFiles/sceref.dir
+  OBJECT_FILE_DIR = CMakeFiles/sceref.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target sceref
+
+
+#############################################
+# Link the executable sceref
+
+build sceref: CXX_EXECUTABLE_LINKER__sceref_Debug CMakeFiles/sceref.dir/sceref.cpp.o
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk
+  OBJECT_DIR = CMakeFiles/sceref.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = sceref
+  TARGET_PDB = sceref.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target cubes
+
+
+#############################################
+# Order-only phony target for cubes
+
+build cmake_object_order_depends_target_cubes: phony || CMakeFiles/cubes.dir
+
+build CMakeFiles/cubes.dir/cubes.cpp.o: CXX_COMPILER__cubes_Debug /Users/liangke/CLionProjects/liangkeDemo/cubes.cpp || cmake_object_order_depends_target_cubes
+  DEP_FILE = CMakeFiles/cubes.dir/cubes.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -std=gnu++14
+  OBJECT_DIR = CMakeFiles/cubes.dir
+  OBJECT_FILE_DIR = CMakeFiles/cubes.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target cubes
+
+
+#############################################
+# Link the executable cubes
+
+build cubes: CXX_EXECUTABLE_LINKER__cubes_Debug CMakeFiles/cubes.dir/cubes.cpp.o
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk
+  OBJECT_DIR = CMakeFiles/cubes.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = cubes
+  TARGET_PDB = cubes.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target strtref
+
+
+#############################################
+# Order-only phony target for strtref
+
+build cmake_object_order_depends_target_strtref: phony || CMakeFiles/strtref.dir
+
+build CMakeFiles/strtref.dir/strtref.cpp.o: CXX_COMPILER__strtref_Debug /Users/liangke/CLionProjects/liangkeDemo/strtref.cpp || cmake_object_order_depends_target_strtref
+  DEP_FILE = CMakeFiles/strtref.dir/strtref.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -std=gnu++14
+  OBJECT_DIR = CMakeFiles/strtref.dir
+  OBJECT_FILE_DIR = CMakeFiles/strtref.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target strtref
+
+
+#############################################
+# Link the executable strtref
+
+build strtref: CXX_EXECUTABLE_LINKER__strtref_Debug CMakeFiles/strtref.dir/strtref.cpp.o
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk
+  OBJECT_DIR = CMakeFiles/strtref.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = strtref
+  TARGET_PDB = strtref.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target strquote
+
+
+#############################################
+# Order-only phony target for strquote
+
+build cmake_object_order_depends_target_strquote: phony || CMakeFiles/strquote.dir
+
+build CMakeFiles/strquote.dir/strquote.cpp.o: CXX_COMPILER__strquote_Debug /Users/liangke/CLionProjects/liangkeDemo/strquote.cpp || cmake_object_order_depends_target_strquote
+  DEP_FILE = CMakeFiles/strquote.dir/strquote.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -std=gnu++14
+  OBJECT_DIR = CMakeFiles/strquote.dir
+  OBJECT_FILE_DIR = CMakeFiles/strquote.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target strquote
+
+
+#############################################
+# Link the executable strquote
+
+build strquote: CXX_EXECUTABLE_LINKER__strquote_Debug CMakeFiles/strquote.dir/strquote.cpp.o
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk
+  OBJECT_DIR = CMakeFiles/strquote.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = strquote
+  TARGET_PDB = strquote.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target auto
+
+
+#############################################
+# Order-only phony target for auto
+
+build cmake_object_order_depends_target_auto: phony || CMakeFiles/auto.dir
+
+build CMakeFiles/auto.dir/auto.cpp.o: CXX_COMPILER__auto_Debug /Users/liangke/CLionProjects/liangkeDemo/auto.cpp || cmake_object_order_depends_target_auto
+  DEP_FILE = CMakeFiles/auto.dir/auto.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -std=gnu++14
+  OBJECT_DIR = CMakeFiles/auto.dir
+  OBJECT_FILE_DIR = CMakeFiles/auto.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target auto
+
+
+#############################################
+# Link the executable auto
+
+build auto: CXX_EXECUTABLE_LINKER__auto_Debug CMakeFiles/auto.dir/auto.cpp.o
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk
+  OBJECT_DIR = CMakeFiles/auto.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = auto
+  TARGET_PDB = auto.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target staticDemo
+
+
+#############################################
+# Order-only phony target for staticDemo
+
+build cmake_object_order_depends_target_staticDemo: phony || CMakeFiles/staticDemo.dir
+
+build CMakeFiles/staticDemo.dir/staticDemo.cpp.o: CXX_COMPILER__staticDemo_Debug /Users/liangke/CLionProjects/liangkeDemo/staticDemo.cpp || cmake_object_order_depends_target_staticDemo
+  DEP_FILE = CMakeFiles/staticDemo.dir/staticDemo.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -std=gnu++14
+  OBJECT_DIR = CMakeFiles/staticDemo.dir
+  OBJECT_FILE_DIR = CMakeFiles/staticDemo.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target staticDemo
+
+
+#############################################
+# Link the executable staticDemo
+
+build staticDemo: CXX_EXECUTABLE_LINKER__staticDemo_Debug CMakeFiles/staticDemo.dir/staticDemo.cpp.o
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk
+  OBJECT_DIR = CMakeFiles/staticDemo.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = staticDemo
+  TARGET_PDB = staticDemo.dbg
+
+
+#############################################
+# Utility command for edit_cache
+
+build CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /Users/liangke/CLionProjects/liangkeDemo/cmake-build-debug && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build edit_cache: phony CMakeFiles/edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /Users/liangke/CLionProjects/liangkeDemo/cmake-build-debug && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake --regenerate-during-build -S/Users/liangke/CLionProjects/liangkeDemo -B/Users/liangke/CLionProjects/liangkeDemo/cmake-build-debug
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build rebuild_cache: phony CMakeFiles/rebuild_cache.util
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# /Users/liangke/CLionProjects/liangkeDemo/CMakeLists.txt
+# =============================================================================
+
+# =============================================================================
+# Object build statements for EXECUTABLE target Demo01
+
+
+#############################################
+# Order-only phony target for Demo01
+
+build cmake_object_order_depends_target_Demo01: phony || Demo01/CMakeFiles/Demo01.dir
+
+build Demo01/CMakeFiles/Demo01.dir/file1.cpp.o: CXX_COMPILER__Demo01_Debug /Users/liangke/CLionProjects/liangkeDemo/Demo01/file1.cpp || cmake_object_order_depends_target_Demo01
+  DEP_FILE = Demo01/CMakeFiles/Demo01.dir/file1.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -std=gnu++14
+  INCLUDES = -I/Users/liangke/CLionProjects/liangkeDemo/Demo01/.
+  OBJECT_DIR = Demo01/CMakeFiles/Demo01.dir
+  OBJECT_FILE_DIR = Demo01/CMakeFiles/Demo01.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target Demo01
+
+
+#############################################
+# Link the executable Demo01/Demo01
+
+build Demo01/Demo01: CXX_EXECUTABLE_LINKER__Demo01_Debug Demo01/CMakeFiles/Demo01.dir/file1.cpp.o
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk
+  OBJECT_DIR = Demo01/CMakeFiles/Demo01.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = Demo01/Demo01
+  TARGET_PDB = Demo01.dbg
+
+
+#############################################
+# Utility command for edit_cache
+
+build Demo01/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /Users/liangke/CLionProjects/liangkeDemo/cmake-build-debug/Demo01 && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build Demo01/edit_cache: phony Demo01/CMakeFiles/edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build Demo01/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /Users/liangke/CLionProjects/liangkeDemo/cmake-build-debug/Demo01 && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake --regenerate-during-build -S/Users/liangke/CLionProjects/liangkeDemo -B/Users/liangke/CLionProjects/liangkeDemo/cmake-build-debug
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build Demo01/rebuild_cache: phony Demo01/CMakeFiles/rebuild_cache.util
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# /Users/liangke/CLionProjects/liangkeDemo/CMakeLists.txt
+# =============================================================================
+
+# =============================================================================
+# Object build statements for EXECUTABLE target Demo02
+
+
+#############################################
+# Order-only phony target for Demo02
+
+build cmake_object_order_depends_target_Demo02: phony || Demo02/CMakeFiles/Demo02.dir
+
+build Demo02/CMakeFiles/Demo02.dir/external.cpp.o: CXX_COMPILER__Demo02_Debug /Users/liangke/CLionProjects/liangkeDemo/Demo02/external.cpp || cmake_object_order_depends_target_Demo02
+  DEP_FILE = Demo02/CMakeFiles/Demo02.dir/external.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -std=gnu++14
+  INCLUDES = -I/Users/liangke/CLionProjects/liangkeDemo/Demo02/.
+  OBJECT_DIR = Demo02/CMakeFiles/Demo02.dir
+  OBJECT_FILE_DIR = Demo02/CMakeFiles/Demo02.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target Demo02
+
+
+#############################################
+# Link the executable Demo02/Demo02
+
+build Demo02/Demo02: CXX_EXECUTABLE_LINKER__Demo02_Debug Demo02/CMakeFiles/Demo02.dir/external.cpp.o
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk
+  OBJECT_DIR = Demo02/CMakeFiles/Demo02.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = Demo02/Demo02
+  TARGET_PDB = Demo02.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target namessp
+
+
+#############################################
+# Order-only phony target for namessp
+
+build cmake_object_order_depends_target_namessp: phony || Demo02/CMakeFiles/namessp.dir
+
+build Demo02/CMakeFiles/namessp.dir/namessp.cpp.o: CXX_COMPILER__namessp_Debug /Users/liangke/CLionProjects/liangkeDemo/Demo02/namessp.cpp || cmake_object_order_depends_target_namessp
+  DEP_FILE = Demo02/CMakeFiles/namessp.dir/namessp.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -std=gnu++14
+  INCLUDES = -I/Users/liangke/CLionProjects/liangkeDemo/Demo02/.
+  OBJECT_DIR = Demo02/CMakeFiles/namessp.dir
+  OBJECT_FILE_DIR = Demo02/CMakeFiles/namessp.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target namessp
+
+
+#############################################
+# Link the executable Demo02/namessp
+
+build Demo02/namessp: CXX_EXECUTABLE_LINKER__namessp_Debug Demo02/CMakeFiles/namessp.dir/namessp.cpp.o
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk
+  OBJECT_DIR = Demo02/CMakeFiles/namessp.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = Demo02/namessp
+  TARGET_PDB = namessp.dbg
+
+
+#############################################
+# Utility command for edit_cache
+
+build Demo02/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /Users/liangke/CLionProjects/liangkeDemo/cmake-build-debug/Demo02 && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build Demo02/edit_cache: phony Demo02/CMakeFiles/edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build Demo02/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /Users/liangke/CLionProjects/liangkeDemo/cmake-build-debug/Demo02 && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake --regenerate-during-build -S/Users/liangke/CLionProjects/liangkeDemo -B/Users/liangke/CLionProjects/liangkeDemo/cmake-build-debug
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build Demo02/rebuild_cache: phony Demo02/CMakeFiles/rebuild_cache.util
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# /Users/liangke/CLionProjects/liangkeDemo/CMakeLists.txt
+# =============================================================================
+
+# =============================================================================
+# Object build statements for EXECUTABLE target inherit
+
+
+#############################################
+# Order-only phony target for inherit
+
+build cmake_object_order_depends_target_inherit: phony || Demo03/CMakeFiles/inherit.dir
+
+build Demo03/CMakeFiles/inherit.dir/inherit.cpp.o: CXX_COMPILER__inherit_Debug /Users/liangke/CLionProjects/liangkeDemo/Demo03/inherit.cpp || cmake_object_order_depends_target_inherit
+  DEP_FILE = Demo03/CMakeFiles/inherit.dir/inherit.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -std=gnu++14
+  INCLUDES = -I/Users/liangke/CLionProjects/liangkeDemo/Demo03/.
+  OBJECT_DIR = Demo03/CMakeFiles/inherit.dir
+  OBJECT_FILE_DIR = Demo03/CMakeFiles/inherit.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target inherit
+
+
+#############################################
+# Link the executable Demo03/inherit
+
+build Demo03/inherit: CXX_EXECUTABLE_LINKER__inherit_Debug Demo03/CMakeFiles/inherit.dir/inherit.cpp.o
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk
+  OBJECT_DIR = Demo03/CMakeFiles/inherit.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = Demo03/inherit
+  TARGET_PDB = inherit.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target demo2
+
+
+#############################################
+# Order-only phony target for demo2
+
+build cmake_object_order_depends_target_demo2: phony || Demo03/CMakeFiles/demo2.dir
+
+build Demo03/CMakeFiles/demo2.dir/demo2.cpp.o: CXX_COMPILER__demo2_Debug /Users/liangke/CLionProjects/liangkeDemo/Demo03/demo2.cpp || cmake_object_order_depends_target_demo2
+  DEP_FILE = Demo03/CMakeFiles/demo2.dir/demo2.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -std=gnu++14
+  INCLUDES = -I/Users/liangke/CLionProjects/liangkeDemo/Demo03/.
+  OBJECT_DIR = Demo03/CMakeFiles/demo2.dir
+  OBJECT_FILE_DIR = Demo03/CMakeFiles/demo2.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target demo2
+
+
+#############################################
+# Link the executable Demo03/demo2
+
+build Demo03/demo2: CXX_EXECUTABLE_LINKER__demo2_Debug Demo03/CMakeFiles/demo2.dir/demo2.cpp.o
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk
+  OBJECT_DIR = Demo03/CMakeFiles/demo2.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = Demo03/demo2
+  TARGET_PDB = demo2.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target opertor
+
+
+#############################################
+# Order-only phony target for opertor
+
+build cmake_object_order_depends_target_opertor: phony || Demo03/CMakeFiles/opertor.dir
+
+build Demo03/CMakeFiles/opertor.dir/opertor.cpp.o: CXX_COMPILER__opertor_Debug /Users/liangke/CLionProjects/liangkeDemo/Demo03/opertor.cpp || cmake_object_order_depends_target_opertor
+  DEP_FILE = Demo03/CMakeFiles/opertor.dir/opertor.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -std=gnu++14
+  INCLUDES = -I/Users/liangke/CLionProjects/liangkeDemo/Demo03/.
+  OBJECT_DIR = Demo03/CMakeFiles/opertor.dir
+  OBJECT_FILE_DIR = Demo03/CMakeFiles/opertor.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target opertor
+
+
+#############################################
+# Link the executable Demo03/opertor
+
+build Demo03/opertor: CXX_EXECUTABLE_LINKER__opertor_Debug Demo03/CMakeFiles/opertor.dir/opertor.cpp.o
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk
+  OBJECT_DIR = Demo03/CMakeFiles/opertor.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = Demo03/opertor
+  TARGET_PDB = opertor.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target operator02
+
+
+#############################################
+# Order-only phony target for operator02
+
+build cmake_object_order_depends_target_operator02: phony || Demo03/CMakeFiles/operator02.dir
+
+build Demo03/CMakeFiles/operator02.dir/operator02.cpp.o: CXX_COMPILER__operator02_Debug /Users/liangke/CLionProjects/liangkeDemo/Demo03/operator02.cpp || cmake_object_order_depends_target_operator02
+  DEP_FILE = Demo03/CMakeFiles/operator02.dir/operator02.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -std=gnu++14
+  INCLUDES = -I/Users/liangke/CLionProjects/liangkeDemo/Demo03/.
+  OBJECT_DIR = Demo03/CMakeFiles/operator02.dir
+  OBJECT_FILE_DIR = Demo03/CMakeFiles/operator02.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target operator02
+
+
+#############################################
+# Link the executable Demo03/operator02
+
+build Demo03/operator02: CXX_EXECUTABLE_LINKER__operator02_Debug Demo03/CMakeFiles/operator02.dir/operator02.cpp.o
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk
+  OBJECT_DIR = Demo03/CMakeFiles/operator02.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = Demo03/operator02
+  TARGET_PDB = operator02.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target operator03
+
+
+#############################################
+# Order-only phony target for operator03
+
+build cmake_object_order_depends_target_operator03: phony || Demo03/CMakeFiles/operator03.dir
+
+build Demo03/CMakeFiles/operator03.dir/operator03.cpp.o: CXX_COMPILER__operator03_Debug /Users/liangke/CLionProjects/liangkeDemo/Demo03/operator03.cpp || cmake_object_order_depends_target_operator03
+  DEP_FILE = Demo03/CMakeFiles/operator03.dir/operator03.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -std=gnu++14
+  INCLUDES = -I/Users/liangke/CLionProjects/liangkeDemo/Demo03/.
+  OBJECT_DIR = Demo03/CMakeFiles/operator03.dir
+  OBJECT_FILE_DIR = Demo03/CMakeFiles/operator03.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target operator03
+
+
+#############################################
+# Link the executable Demo03/operator03
+
+build Demo03/operator03: CXX_EXECUTABLE_LINKER__operator03_Debug Demo03/CMakeFiles/operator03.dir/operator03.cpp.o
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk
+  OBJECT_DIR = Demo03/CMakeFiles/operator03.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = Demo03/operator03
+  TARGET_PDB = operator03.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target operator04
+
+
+#############################################
+# Order-only phony target for operator04
+
+build cmake_object_order_depends_target_operator04: phony || Demo03/CMakeFiles/operator04.dir
+
+build Demo03/CMakeFiles/operator04.dir/operator04.cpp.o: CXX_COMPILER__operator04_Debug /Users/liangke/CLionProjects/liangkeDemo/Demo03/operator04.cpp || cmake_object_order_depends_target_operator04
+  DEP_FILE = Demo03/CMakeFiles/operator04.dir/operator04.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -std=gnu++14
+  INCLUDES = -I/Users/liangke/CLionProjects/liangkeDemo/Demo03/.
+  OBJECT_DIR = Demo03/CMakeFiles/operator04.dir
+  OBJECT_FILE_DIR = Demo03/CMakeFiles/operator04.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target operator04
+
+
+#############################################
+# Link the executable Demo03/operator04
+
+build Demo03/operator04: CXX_EXECUTABLE_LINKER__operator04_Debug Demo03/CMakeFiles/operator04.dir/operator04.cpp.o
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk
+  OBJECT_DIR = Demo03/CMakeFiles/operator04.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = Demo03/operator04
+  TARGET_PDB = operator04.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target operator05
+
+
+#############################################
+# Order-only phony target for operator05
+
+build cmake_object_order_depends_target_operator05: phony || Demo03/CMakeFiles/operator05.dir
+
+build Demo03/CMakeFiles/operator05.dir/operator05.cpp.o: CXX_COMPILER__operator05_Debug /Users/liangke/CLionProjects/liangkeDemo/Demo03/operator05.cpp || cmake_object_order_depends_target_operator05
+  DEP_FILE = Demo03/CMakeFiles/operator05.dir/operator05.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -std=gnu++14
+  INCLUDES = -I/Users/liangke/CLionProjects/liangkeDemo/Demo03/.
+  OBJECT_DIR = Demo03/CMakeFiles/operator05.dir
+  OBJECT_FILE_DIR = Demo03/CMakeFiles/operator05.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target operator05
+
+
+#############################################
+# Link the executable Demo03/operator05
+
+build Demo03/operator05: CXX_EXECUTABLE_LINKER__operator05_Debug Demo03/CMakeFiles/operator05.dir/operator05.cpp.o
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk
+  OBJECT_DIR = Demo03/CMakeFiles/operator05.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = Demo03/operator05
+  TARGET_PDB = operator05.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target operator06
+
+
+#############################################
+# Order-only phony target for operator06
+
+build cmake_object_order_depends_target_operator06: phony || Demo03/CMakeFiles/operator06.dir
+
+build Demo03/CMakeFiles/operator06.dir/operator06.cpp.o: CXX_COMPILER__operator06_Debug /Users/liangke/CLionProjects/liangkeDemo/Demo03/operator06.cpp || cmake_object_order_depends_target_operator06
+  DEP_FILE = Demo03/CMakeFiles/operator06.dir/operator06.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -std=gnu++14
+  INCLUDES = -I/Users/liangke/CLionProjects/liangkeDemo/Demo03/.
+  OBJECT_DIR = Demo03/CMakeFiles/operator06.dir
+  OBJECT_FILE_DIR = Demo03/CMakeFiles/operator06.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target operator06
+
+
+#############################################
+# Link the executable Demo03/operator06
+
+build Demo03/operator06: CXX_EXECUTABLE_LINKER__operator06_Debug Demo03/CMakeFiles/operator06.dir/operator06.cpp.o
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk
+  OBJECT_DIR = Demo03/CMakeFiles/operator06.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = Demo03/operator06
+  TARGET_PDB = operator06.dbg
+
+
+#############################################
+# Utility command for edit_cache
+
+build Demo03/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /Users/liangke/CLionProjects/liangkeDemo/cmake-build-debug/Demo03 && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build Demo03/edit_cache: phony Demo03/CMakeFiles/edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build Demo03/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /Users/liangke/CLionProjects/liangkeDemo/cmake-build-debug/Demo03 && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake --regenerate-during-build -S/Users/liangke/CLionProjects/liangkeDemo -B/Users/liangke/CLionProjects/liangkeDemo/cmake-build-debug
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build Demo03/rebuild_cache: phony Demo03/CMakeFiles/rebuild_cache.util
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# /Users/liangke/CLionProjects/liangkeDemo/CMakeLists.txt
+# =============================================================================
+
+# =============================================================================
+# Object build statements for EXECUTABLE target unorderMap
+
+
+#############################################
+# Order-only phony target for unorderMap
+
+build cmake_object_order_depends_target_unorderMap: phony || map/CMakeFiles/unorderMap.dir
+
+build map/CMakeFiles/unorderMap.dir/unorderMap.cpp.o: CXX_COMPILER__unorderMap_Debug /Users/liangke/CLionProjects/liangkeDemo/map/unorderMap.cpp || cmake_object_order_depends_target_unorderMap
+  DEP_FILE = map/CMakeFiles/unorderMap.dir/unorderMap.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -std=gnu++14
+  INCLUDES = -I/Users/liangke/CLionProjects/liangkeDemo/map/.
+  OBJECT_DIR = map/CMakeFiles/unorderMap.dir
+  OBJECT_FILE_DIR = map/CMakeFiles/unorderMap.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target unorderMap
+
+
+#############################################
+# Link the executable map/unorderMap
+
+build map/unorderMap: CXX_EXECUTABLE_LINKER__unorderMap_Debug map/CMakeFiles/unorderMap.dir/unorderMap.cpp.o
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk
+  OBJECT_DIR = map/CMakeFiles/unorderMap.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = map/unorderMap
+  TARGET_PDB = unorderMap.dbg
+
+
+#############################################
+# Utility command for edit_cache
+
+build map/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /Users/liangke/CLionProjects/liangkeDemo/cmake-build-debug/map && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build map/edit_cache: phony map/CMakeFiles/edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build map/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /Users/liangke/CLionProjects/liangkeDemo/cmake-build-debug/map && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake --regenerate-during-build -S/Users/liangke/CLionProjects/liangkeDemo -B/Users/liangke/CLionProjects/liangkeDemo/cmake-build-debug
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build map/rebuild_cache: phony map/CMakeFiles/rebuild_cache.util
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# /Users/liangke/CLionProjects/liangkeDemo/CMakeLists.txt
+# =============================================================================
+
+# =============================================================================
+# Object build statements for EXECUTABLE target demo1
+
+
+#############################################
+# Order-only phony target for demo1
+
+build cmake_object_order_depends_target_demo1: phony || virtual/CMakeFiles/demo1.dir
+
+build virtual/CMakeFiles/demo1.dir/demo1.cpp.o: CXX_COMPILER__demo1_Debug /Users/liangke/CLionProjects/liangkeDemo/virtual/demo1.cpp || cmake_object_order_depends_target_demo1
+  DEP_FILE = virtual/CMakeFiles/demo1.dir/demo1.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -std=gnu++14
+  INCLUDES = -I/Users/liangke/CLionProjects/liangkeDemo/virtual/.
+  OBJECT_DIR = virtual/CMakeFiles/demo1.dir
+  OBJECT_FILE_DIR = virtual/CMakeFiles/demo1.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target demo1
+
+
+#############################################
+# Link the executable virtual/demo1
+
+build virtual/demo1: CXX_EXECUTABLE_LINKER__demo1_Debug virtual/CMakeFiles/demo1.dir/demo1.cpp.o
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk
+  OBJECT_DIR = virtual/CMakeFiles/demo1.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = virtual/demo1
+  TARGET_PDB = demo1.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target demo02
+
+
+#############################################
+# Order-only phony target for demo02
+
+build cmake_object_order_depends_target_demo02: phony || virtual/CMakeFiles/demo02.dir
+
+build virtual/CMakeFiles/demo02.dir/demo02.cpp.o: CXX_COMPILER__demo02_Debug /Users/liangke/CLionProjects/liangkeDemo/virtual/demo02.cpp || cmake_object_order_depends_target_demo02
+  DEP_FILE = virtual/CMakeFiles/demo02.dir/demo02.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -std=gnu++14
+  INCLUDES = -I/Users/liangke/CLionProjects/liangkeDemo/virtual/.
+  OBJECT_DIR = virtual/CMakeFiles/demo02.dir
+  OBJECT_FILE_DIR = virtual/CMakeFiles/demo02.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target demo02
+
+
+#############################################
+# Link the executable virtual/demo02
+
+build virtual/demo02: CXX_EXECUTABLE_LINKER__demo02_Debug virtual/CMakeFiles/demo02.dir/demo02.cpp.o
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk
+  OBJECT_DIR = virtual/CMakeFiles/demo02.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = virtual/demo02
+  TARGET_PDB = demo02.dbg
+
+
+#############################################
+# Utility command for edit_cache
+
+build virtual/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /Users/liangke/CLionProjects/liangkeDemo/cmake-build-debug/virtual && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build virtual/edit_cache: phony virtual/CMakeFiles/edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build virtual/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /Users/liangke/CLionProjects/liangkeDemo/cmake-build-debug/virtual && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake --regenerate-during-build -S/Users/liangke/CLionProjects/liangkeDemo -B/Users/liangke/CLionProjects/liangkeDemo/cmake-build-debug
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build virtual/rebuild_cache: phony virtual/CMakeFiles/rebuild_cache.util
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# /Users/liangke/CLionProjects/liangkeDemo/CMakeLists.txt
+# =============================================================================
+
+# =============================================================================
+# Object build statements for EXECUTABLE target usestock00
+
+
+#############################################
+# Order-only phony target for usestock00
+
+build cmake_object_order_depends_target_usestock00: phony || classDemo/CMakeFiles/usestock00.dir
+
+build classDemo/CMakeFiles/usestock00.dir/usestock00.cpp.o: CXX_COMPILER__usestock00_Debug /Users/liangke/CLionProjects/liangkeDemo/classDemo/usestock00.cpp || cmake_object_order_depends_target_usestock00
+  DEP_FILE = classDemo/CMakeFiles/usestock00.dir/usestock00.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -std=gnu++14
+  INCLUDES = -I/Users/liangke/CLionProjects/liangkeDemo/classDemo/.
+  OBJECT_DIR = classDemo/CMakeFiles/usestock00.dir
+  OBJECT_FILE_DIR = classDemo/CMakeFiles/usestock00.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target usestock00
+
+
+#############################################
+# Link the executable classDemo/usestock00
+
+build classDemo/usestock00: CXX_EXECUTABLE_LINKER__usestock00_Debug classDemo/CMakeFiles/usestock00.dir/usestock00.cpp.o
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk
+  OBJECT_DIR = classDemo/CMakeFiles/usestock00.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = classDemo/usestock00
+  TARGET_PDB = usestock00.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target usestock02
+
+
+#############################################
+# Order-only phony target for usestock02
+
+build cmake_object_order_depends_target_usestock02: phony || classDemo/CMakeFiles/usestock02.dir
+
+build classDemo/CMakeFiles/usestock02.dir/usestock02.cpp.o: CXX_COMPILER__usestock02_Debug /Users/liangke/CLionProjects/liangkeDemo/classDemo/usestock02.cpp || cmake_object_order_depends_target_usestock02
+  DEP_FILE = classDemo/CMakeFiles/usestock02.dir/usestock02.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -std=gnu++14
+  INCLUDES = -I/Users/liangke/CLionProjects/liangkeDemo/classDemo/.
+  OBJECT_DIR = classDemo/CMakeFiles/usestock02.dir
+  OBJECT_FILE_DIR = classDemo/CMakeFiles/usestock02.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target usestock02
+
+
+#############################################
+# Link the executable classDemo/usestock02
+
+build classDemo/usestock02: CXX_EXECUTABLE_LINKER__usestock02_Debug classDemo/CMakeFiles/usestock02.dir/usestock02.cpp.o
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk
+  OBJECT_DIR = classDemo/CMakeFiles/usestock02.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = classDemo/usestock02
+  TARGET_PDB = usestock02.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target ClassModelDemo
+
+
+#############################################
+# Order-only phony target for ClassModelDemo
+
+build cmake_object_order_depends_target_ClassModelDemo: phony || classDemo/CMakeFiles/ClassModelDemo.dir
+
+build classDemo/CMakeFiles/ClassModelDemo.dir/ClassModelDemo.cpp.o: CXX_COMPILER__ClassModelDemo_Debug /Users/liangke/CLionProjects/liangkeDemo/classDemo/ClassModelDemo.cpp || cmake_object_order_depends_target_ClassModelDemo
+  DEP_FILE = classDemo/CMakeFiles/ClassModelDemo.dir/ClassModelDemo.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -std=gnu++14
+  INCLUDES = -I/Users/liangke/CLionProjects/liangkeDemo/classDemo/.
+  OBJECT_DIR = classDemo/CMakeFiles/ClassModelDemo.dir
+  OBJECT_FILE_DIR = classDemo/CMakeFiles/ClassModelDemo.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target ClassModelDemo
+
+
+#############################################
+# Link the executable classDemo/ClassModelDemo
+
+build classDemo/ClassModelDemo: CXX_EXECUTABLE_LINKER__ClassModelDemo_Debug classDemo/CMakeFiles/ClassModelDemo.dir/ClassModelDemo.cpp.o
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk
+  OBJECT_DIR = classDemo/CMakeFiles/ClassModelDemo.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = classDemo/ClassModelDemo
+  TARGET_PDB = ClassModelDemo.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target thisPtrDemo
+
+
+#############################################
+# Order-only phony target for thisPtrDemo
+
+build cmake_object_order_depends_target_thisPtrDemo: phony || classDemo/CMakeFiles/thisPtrDemo.dir
+
+build classDemo/CMakeFiles/thisPtrDemo.dir/thisPtrDemo.cpp.o: CXX_COMPILER__thisPtrDemo_Debug /Users/liangke/CLionProjects/liangkeDemo/classDemo/thisPtrDemo.cpp || cmake_object_order_depends_target_thisPtrDemo
+  DEP_FILE = classDemo/CMakeFiles/thisPtrDemo.dir/thisPtrDemo.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -std=gnu++14
+  INCLUDES = -I/Users/liangke/CLionProjects/liangkeDemo/classDemo/.
+  OBJECT_DIR = classDemo/CMakeFiles/thisPtrDemo.dir
+  OBJECT_FILE_DIR = classDemo/CMakeFiles/thisPtrDemo.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target thisPtrDemo
+
+
+#############################################
+# Link the executable classDemo/thisPtrDemo
+
+build classDemo/thisPtrDemo: CXX_EXECUTABLE_LINKER__thisPtrDemo_Debug classDemo/CMakeFiles/thisPtrDemo.dir/thisPtrDemo.cpp.o
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk
+  OBJECT_DIR = classDemo/CMakeFiles/thisPtrDemo.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = classDemo/thisPtrDemo
+  TARGET_PDB = thisPtrDemo.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target constDemo
+
+
+#############################################
+# Order-only phony target for constDemo
+
+build cmake_object_order_depends_target_constDemo: phony || classDemo/CMakeFiles/constDemo.dir
+
+build classDemo/CMakeFiles/constDemo.dir/constDemo.cpp.o: CXX_COMPILER__constDemo_Debug /Users/liangke/CLionProjects/liangkeDemo/classDemo/constDemo.cpp || cmake_object_order_depends_target_constDemo
+  DEP_FILE = classDemo/CMakeFiles/constDemo.dir/constDemo.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -std=gnu++14
+  INCLUDES = -I/Users/liangke/CLionProjects/liangkeDemo/classDemo/.
+  OBJECT_DIR = classDemo/CMakeFiles/constDemo.dir
+  OBJECT_FILE_DIR = classDemo/CMakeFiles/constDemo.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target constDemo
+
+
+#############################################
+# Link the executable classDemo/constDemo
+
+build classDemo/constDemo: CXX_EXECUTABLE_LINKER__constDemo_Debug classDemo/CMakeFiles/constDemo.dir/constDemo.cpp.o
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk
+  OBJECT_DIR = classDemo/CMakeFiles/constDemo.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = classDemo/constDemo
+  TARGET_PDB = constDemo.dbg
+
+
+#############################################
+# Utility command for edit_cache
+
+build classDemo/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /Users/liangke/CLionProjects/liangkeDemo/cmake-build-debug/classDemo && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build classDemo/edit_cache: phony classDemo/CMakeFiles/edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build classDemo/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /Users/liangke/CLionProjects/liangkeDemo/cmake-build-debug/classDemo && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake --regenerate-during-build -S/Users/liangke/CLionProjects/liangkeDemo -B/Users/liangke/CLionProjects/liangkeDemo/cmake-build-debug
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build classDemo/rebuild_cache: phony classDemo/CMakeFiles/rebuild_cache.util
+
+# =============================================================================
+# Target aliases.
+
+build ClassModelDemo: phony classDemo/ClassModelDemo
+
+build Demo01: phony Demo01/Demo01
+
+build Demo02: phony Demo02/Demo02
+
+build constDemo: phony classDemo/constDemo
+
+build demo02: phony virtual/demo02
+
+build demo1: phony virtual/demo1
+
+build demo2: phony Demo03/demo2
+
+build inherit: phony Demo03/inherit
+
+build namessp: phony Demo02/namessp
+
+build operator02: phony Demo03/operator02
+
+build operator03: phony Demo03/operator03
+
+build operator04: phony Demo03/operator04
+
+build operator05: phony Demo03/operator05
+
+build operator06: phony Demo03/operator06
+
+build opertor: phony Demo03/opertor
+
+build thisPtrDemo: phony classDemo/thisPtrDemo
+
+build unorderMap: phony map/unorderMap
+
+build usestock00: phony classDemo/usestock00
+
+build usestock02: phony classDemo/usestock02
+
+# =============================================================================
+# Folder targets.
+
+# =============================================================================
+
+#############################################
+# Folder: /Users/liangke/CLionProjects/liangkeDemo/cmake-build-debug
+
+build all: phony liangkeDemo main arraysDemo zhichuandi printDemo structDemo neicunModel neicunModel1 sceref cubes strtref strquote auto staticDemo Demo01/all Demo02/all Demo03/all map/all virtual/all classDemo/all
+
+# =============================================================================
+
+#############################################
+# Folder: /Users/liangke/CLionProjects/liangkeDemo/cmake-build-debug/Demo01
+
+build Demo01/all: phony Demo01/Demo01
+
+# =============================================================================
+
+#############################################
+# Folder: /Users/liangke/CLionProjects/liangkeDemo/cmake-build-debug/Demo02
+
+build Demo02/all: phony Demo02/Demo02 Demo02/namessp
+
+# =============================================================================
+
+#############################################
+# Folder: /Users/liangke/CLionProjects/liangkeDemo/cmake-build-debug/Demo03
+
+build Demo03/all: phony Demo03/inherit Demo03/demo2 Demo03/opertor Demo03/operator02 Demo03/operator03 Demo03/operator04 Demo03/operator05 Demo03/operator06
+
+# =============================================================================
+
+#############################################
+# Folder: /Users/liangke/CLionProjects/liangkeDemo/cmake-build-debug/classDemo
+
+build classDemo/all: phony classDemo/usestock00 classDemo/usestock02 classDemo/ClassModelDemo classDemo/thisPtrDemo classDemo/constDemo
+
+# =============================================================================
+
+#############################################
+# Folder: /Users/liangke/CLionProjects/liangkeDemo/cmake-build-debug/map
+
+build map/all: phony map/unorderMap
+
+# =============================================================================
+
+#############################################
+# Folder: /Users/liangke/CLionProjects/liangkeDemo/cmake-build-debug/virtual
+
+build virtual/all: phony virtual/demo1 virtual/demo02
+
+# =============================================================================
+# Built-in targets
+
+
+#############################################
+# Re-run CMake if any of its inputs changed.
+
+build build.ninja: RERUN_CMAKE | ../CMakeLists.txt ../Demo01/CMakeLists.txt ../Demo02/CMakeLists.txt ../Demo03/CMakeLists.txt ../classDemo/CMakeLists.txt ../map/CMakeLists.txt ../virtual/CMakeLists.txt /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeCInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeCXXInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeCommonLanguageInclude.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeGenericSystem.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeInitializeConfigs.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeLanguageInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeSystemSpecificInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeSystemSpecificInitialize.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/AppleClang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/AppleClang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/CMakeCommonCompilerMacros.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/Clang.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/GNU.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/Apple-AppleClang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/Apple-AppleClang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/Apple-Clang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/Apple-Clang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/Apple-Clang.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/Darwin-Initialize.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/Darwin.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/UnixPaths.cmake CMakeCache.txt CMakeFiles/3.23.2/CMakeCCompiler.cmake CMakeFiles/3.23.2/CMakeCXXCompiler.cmake CMakeFiles/3.23.2/CMakeSystem.cmake
+  pool = console
+
+
+#############################################
+# A missing CMake input file is not an error.
+
+build ../CMakeLists.txt ../Demo01/CMakeLists.txt ../Demo02/CMakeLists.txt ../Demo03/CMakeLists.txt ../classDemo/CMakeLists.txt ../map/CMakeLists.txt ../virtual/CMakeLists.txt /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeCInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeCXXInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeCommonLanguageInclude.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeGenericSystem.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeInitializeConfigs.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeLanguageInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeSystemSpecificInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeSystemSpecificInitialize.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/AppleClang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/AppleClang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/CMakeCommonCompilerMacros.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/Clang.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/GNU.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/Apple-AppleClang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/Apple-AppleClang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/Apple-Clang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/Apple-Clang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/Apple-Clang.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/Darwin-Initialize.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/Darwin.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/UnixPaths.cmake CMakeCache.txt CMakeFiles/3.23.2/CMakeCCompiler.cmake CMakeFiles/3.23.2/CMakeCXXCompiler.cmake CMakeFiles/3.23.2/CMakeSystem.cmake: phony
+
+
+#############################################
+# Clean all the built files.
+
+build clean: CLEAN
+
+
+#############################################
+# Print all primary targets available.
+
+build help: HELP
+
+
+#############################################
+# Make the all target the default.
+
+default all
