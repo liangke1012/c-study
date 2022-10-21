@@ -1271,6 +1271,98 @@ build classDemo/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
 build classDemo/rebuild_cache: phony classDemo/CMakeFiles/rebuild_cache.util
 
 # =============================================================================
+# Write statements declared in CMakeLists.txt:
+# /Users/liangke/CLionProjects/liangkeDemo/CMakeLists.txt
+# =============================================================================
+
+# =============================================================================
+# Object build statements for EXECUTABLE target mallocDemo
+
+
+#############################################
+# Order-only phony target for mallocDemo
+
+build cmake_object_order_depends_target_mallocDemo: phony || memoryDemo/CMakeFiles/mallocDemo.dir
+
+build memoryDemo/CMakeFiles/mallocDemo.dir/mallocDemo.cpp.o: CXX_COMPILER__mallocDemo_Debug /Users/liangke/CLionProjects/liangkeDemo/memoryDemo/mallocDemo.cpp || cmake_object_order_depends_target_mallocDemo
+  DEP_FILE = memoryDemo/CMakeFiles/mallocDemo.dir/mallocDemo.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -std=gnu++14
+  INCLUDES = -I/Users/liangke/CLionProjects/liangkeDemo/memoryDemo/.
+  OBJECT_DIR = memoryDemo/CMakeFiles/mallocDemo.dir
+  OBJECT_FILE_DIR = memoryDemo/CMakeFiles/mallocDemo.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target mallocDemo
+
+
+#############################################
+# Link the executable memoryDemo/mallocDemo
+
+build memoryDemo/mallocDemo: CXX_EXECUTABLE_LINKER__mallocDemo_Debug memoryDemo/CMakeFiles/mallocDemo.dir/mallocDemo.cpp.o
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk
+  OBJECT_DIR = memoryDemo/CMakeFiles/mallocDemo.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = memoryDemo/mallocDemo
+  TARGET_PDB = mallocDemo.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target swap02
+
+
+#############################################
+# Order-only phony target for swap02
+
+build cmake_object_order_depends_target_swap02: phony || memoryDemo/CMakeFiles/swap02.dir
+
+build memoryDemo/CMakeFiles/swap02.dir/swap02.cpp.o: CXX_COMPILER__swap02_Debug /Users/liangke/CLionProjects/liangkeDemo/memoryDemo/swap02.cpp || cmake_object_order_depends_target_swap02
+  DEP_FILE = memoryDemo/CMakeFiles/swap02.dir/swap02.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -std=gnu++14
+  INCLUDES = -I/Users/liangke/CLionProjects/liangkeDemo/memoryDemo/.
+  OBJECT_DIR = memoryDemo/CMakeFiles/swap02.dir
+  OBJECT_FILE_DIR = memoryDemo/CMakeFiles/swap02.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target swap02
+
+
+#############################################
+# Link the executable memoryDemo/swap02
+
+build memoryDemo/swap02: CXX_EXECUTABLE_LINKER__swap02_Debug memoryDemo/CMakeFiles/swap02.dir/swap02.cpp.o
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk
+  OBJECT_DIR = memoryDemo/CMakeFiles/swap02.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = memoryDemo/swap02
+  TARGET_PDB = swap02.dbg
+
+
+#############################################
+# Utility command for edit_cache
+
+build memoryDemo/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /Users/liangke/CLionProjects/liangkeDemo/cmake-build-debug/memoryDemo && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build memoryDemo/edit_cache: phony memoryDemo/CMakeFiles/edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build memoryDemo/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /Users/liangke/CLionProjects/liangkeDemo/cmake-build-debug/memoryDemo && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake --regenerate-during-build -S/Users/liangke/CLionProjects/liangkeDemo -B/Users/liangke/CLionProjects/liangkeDemo/cmake-build-debug
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build memoryDemo/rebuild_cache: phony memoryDemo/CMakeFiles/rebuild_cache.util
+
+# =============================================================================
 # Target aliases.
 
 build ClassModelDemo: phony classDemo/ClassModelDemo
@@ -1289,6 +1381,8 @@ build demo2: phony Demo03/demo2
 
 build inherit: phony Demo03/inherit
 
+build mallocDemo: phony memoryDemo/mallocDemo
+
 build namessp: phony Demo02/namessp
 
 build operator02: phony Demo03/operator02
@@ -1302,6 +1396,8 @@ build operator05: phony Demo03/operator05
 build operator06: phony Demo03/operator06
 
 build opertor: phony Demo03/opertor
+
+build swap02: phony memoryDemo/swap02
 
 build thisPtrDemo: phony classDemo/thisPtrDemo
 
@@ -1319,7 +1415,7 @@ build usestock02: phony classDemo/usestock02
 #############################################
 # Folder: /Users/liangke/CLionProjects/liangkeDemo/cmake-build-debug
 
-build all: phony liangkeDemo main arraysDemo zhichuandi printDemo structDemo neicunModel neicunModel1 sceref cubes strtref strquote auto staticDemo Demo01/all Demo02/all Demo03/all map/all virtual/all classDemo/all
+build all: phony liangkeDemo main arraysDemo zhichuandi printDemo structDemo neicunModel neicunModel1 sceref cubes strtref strquote auto staticDemo Demo01/all Demo02/all Demo03/all map/all virtual/all classDemo/all memoryDemo/all
 
 # =============================================================================
 
@@ -1359,6 +1455,13 @@ build map/all: phony map/unorderMap
 # =============================================================================
 
 #############################################
+# Folder: /Users/liangke/CLionProjects/liangkeDemo/cmake-build-debug/memoryDemo
+
+build memoryDemo/all: phony memoryDemo/mallocDemo memoryDemo/swap02
+
+# =============================================================================
+
+#############################################
 # Folder: /Users/liangke/CLionProjects/liangkeDemo/cmake-build-debug/virtual
 
 build virtual/all: phony virtual/demo1 virtual/demo02
@@ -1370,14 +1473,14 @@ build virtual/all: phony virtual/demo1 virtual/demo02
 #############################################
 # Re-run CMake if any of its inputs changed.
 
-build build.ninja: RERUN_CMAKE | ../CMakeLists.txt ../Demo01/CMakeLists.txt ../Demo02/CMakeLists.txt ../Demo03/CMakeLists.txt ../classDemo/CMakeLists.txt ../map/CMakeLists.txt ../virtual/CMakeLists.txt /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeCInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeCXXInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeCommonLanguageInclude.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeGenericSystem.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeInitializeConfigs.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeLanguageInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeSystemSpecificInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeSystemSpecificInitialize.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/AppleClang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/AppleClang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/CMakeCommonCompilerMacros.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/Clang.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/GNU.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/Apple-AppleClang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/Apple-AppleClang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/Apple-Clang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/Apple-Clang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/Apple-Clang.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/Darwin-Initialize.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/Darwin.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/UnixPaths.cmake CMakeCache.txt CMakeFiles/3.23.2/CMakeCCompiler.cmake CMakeFiles/3.23.2/CMakeCXXCompiler.cmake CMakeFiles/3.23.2/CMakeSystem.cmake
+build build.ninja: RERUN_CMAKE | ../CMakeLists.txt ../Demo01/CMakeLists.txt ../Demo02/CMakeLists.txt ../Demo03/CMakeLists.txt ../classDemo/CMakeLists.txt ../map/CMakeLists.txt ../memoryDemo/CMakeLists.txt ../virtual/CMakeLists.txt /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeCInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeCXXInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeCommonLanguageInclude.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeGenericSystem.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeInitializeConfigs.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeLanguageInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeSystemSpecificInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeSystemSpecificInitialize.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/AppleClang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/AppleClang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/CMakeCommonCompilerMacros.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/Clang.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/GNU.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/Apple-AppleClang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/Apple-AppleClang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/Apple-Clang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/Apple-Clang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/Apple-Clang.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/Darwin-Initialize.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/Darwin.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/UnixPaths.cmake CMakeCache.txt CMakeFiles/3.23.2/CMakeCCompiler.cmake CMakeFiles/3.23.2/CMakeCXXCompiler.cmake CMakeFiles/3.23.2/CMakeSystem.cmake
   pool = console
 
 
 #############################################
 # A missing CMake input file is not an error.
 
-build ../CMakeLists.txt ../Demo01/CMakeLists.txt ../Demo02/CMakeLists.txt ../Demo03/CMakeLists.txt ../classDemo/CMakeLists.txt ../map/CMakeLists.txt ../virtual/CMakeLists.txt /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeCInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeCXXInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeCommonLanguageInclude.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeGenericSystem.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeInitializeConfigs.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeLanguageInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeSystemSpecificInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeSystemSpecificInitialize.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/AppleClang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/AppleClang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/CMakeCommonCompilerMacros.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/Clang.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/GNU.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/Apple-AppleClang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/Apple-AppleClang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/Apple-Clang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/Apple-Clang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/Apple-Clang.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/Darwin-Initialize.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/Darwin.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/UnixPaths.cmake CMakeCache.txt CMakeFiles/3.23.2/CMakeCCompiler.cmake CMakeFiles/3.23.2/CMakeCXXCompiler.cmake CMakeFiles/3.23.2/CMakeSystem.cmake: phony
+build ../CMakeLists.txt ../Demo01/CMakeLists.txt ../Demo02/CMakeLists.txt ../Demo03/CMakeLists.txt ../classDemo/CMakeLists.txt ../map/CMakeLists.txt ../memoryDemo/CMakeLists.txt ../virtual/CMakeLists.txt /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeCInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeCXXInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeCommonLanguageInclude.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeGenericSystem.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeInitializeConfigs.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeLanguageInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeSystemSpecificInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeSystemSpecificInitialize.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/AppleClang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/AppleClang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/CMakeCommonCompilerMacros.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/Clang.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/GNU.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/Apple-AppleClang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/Apple-AppleClang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/Apple-Clang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/Apple-Clang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/Apple-Clang.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/Darwin-Initialize.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/Darwin.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/UnixPaths.cmake CMakeCache.txt CMakeFiles/3.23.2/CMakeCCompiler.cmake CMakeFiles/3.23.2/CMakeCXXCompiler.cmake CMakeFiles/3.23.2/CMakeSystem.cmake: phony
 
 
 #############################################

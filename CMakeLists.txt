@@ -9,6 +9,7 @@ ADD_SUBDIRECTORY(Demo03)
 ADD_SUBDIRECTORY(map)
 ADD_SUBDIRECTORY(virtual)
 ADD_SUBDIRECTORY(classDemo)
+ADD_SUBDIRECTORY(memoryDemo)
 
 add_executable(liangkeDemo main.cpp)
 add_executable(main main.cpp)
