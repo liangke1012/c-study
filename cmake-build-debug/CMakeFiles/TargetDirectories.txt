@@ -47,5 +47,11 @@
 /Users/liangke/CLionProjects/liangkeDemo/cmake-build-debug/classDemo/CMakeFiles/rebuild_cache.dir
 /Users/liangke/CLionProjects/liangkeDemo/cmake-build-debug/memoryDemo/CMakeFiles/mallocDemo.dir
 /Users/liangke/CLionProjects/liangkeDemo/cmake-build-debug/memoryDemo/CMakeFiles/swap02.dir
+/Users/liangke/CLionProjects/liangkeDemo/cmake-build-debug/memoryDemo/CMakeFiles/arrays.dir
+/Users/liangke/CLionProjects/liangkeDemo/cmake-build-debug/memoryDemo/CMakeFiles/demoPoiner.dir
 /Users/liangke/CLionProjects/liangkeDemo/cmake-build-debug/memoryDemo/CMakeFiles/edit_cache.dir
 /Users/liangke/CLionProjects/liangkeDemo/cmake-build-debug/memoryDemo/CMakeFiles/rebuild_cache.dir
+/Users/liangke/CLionProjects/liangkeDemo/cmake-build-debug/ConstDemo/CMakeFiles/demo001.dir
+/Users/liangke/CLionProjects/liangkeDemo/cmake-build-debug/ConstDemo/CMakeFiles/demp002.dir
+/Users/liangke/CLionProjects/liangkeDemo/cmake-build-debug/ConstDemo/CMakeFiles/edit_cache.dir
+/Users/liangke/CLionProjects/liangkeDemo/cmake-build-debug/ConstDemo/CMakeFiles/rebuild_cache.dir
