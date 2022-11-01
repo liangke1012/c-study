@@ -1495,6 +1495,38 @@ build ConstDemo/demp002: CXX_EXECUTABLE_LINKER__demp002_Debug ConstDemo/CMakeFil
   TARGET_FILE = ConstDemo/demp002
   TARGET_PDB = demp002.dbg
 
+# =============================================================================
+# Object build statements for EXECUTABLE target dem0003
+
+
+#############################################
+# Order-only phony target for dem0003
+
+build cmake_object_order_depends_target_dem0003: phony || ConstDemo/CMakeFiles/dem0003.dir
+
+build ConstDemo/CMakeFiles/dem0003.dir/demo003.cpp.o: CXX_COMPILER__dem0003_Debug /Users/liangke/CLionProjects/liangkeDemo/ConstDemo/demo003.cpp || cmake_object_order_depends_target_dem0003
+  DEP_FILE = ConstDemo/CMakeFiles/dem0003.dir/demo003.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -std=gnu++14
+  INCLUDES = -I/Users/liangke/CLionProjects/liangkeDemo/ConstDemo/.
+  OBJECT_DIR = ConstDemo/CMakeFiles/dem0003.dir
+  OBJECT_FILE_DIR = ConstDemo/CMakeFiles/dem0003.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target dem0003
+
+
+#############################################
+# Link the executable ConstDemo/dem0003
+
+build ConstDemo/dem0003: CXX_EXECUTABLE_LINKER__dem0003_Debug ConstDemo/CMakeFiles/dem0003.dir/demo003.cpp.o
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk
+  OBJECT_DIR = ConstDemo/CMakeFiles/dem0003.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = ConstDemo/dem0003
+  TARGET_PDB = dem0003.dbg
+
 
 #############################################
 # Utility command for edit_cache
@@ -1530,6 +1562,8 @@ build Demo02: phony Demo02/Demo02
 build arrays: phony memoryDemo/arrays
 
 build constDemo: phony classDemo/constDemo
+
+build dem0003: phony ConstDemo/dem0003
 
 build demo001: phony ConstDemo/demo001
 
@@ -1586,7 +1620,7 @@ build all: phony liangkeDemo main arraysDemo zhichuandi printDemo structDemo nei
 #############################################
 # Folder: /Users/liangke/CLionProjects/liangkeDemo/cmake-build-debug/ConstDemo
 
-build ConstDemo/all: phony ConstDemo/demo001 ConstDemo/demp002
+build ConstDemo/all: phony ConstDemo/demo001 ConstDemo/demp002 ConstDemo/dem0003
 
 # =============================================================================
 
