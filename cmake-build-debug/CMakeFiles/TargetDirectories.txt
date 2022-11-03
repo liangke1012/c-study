@@ -62,5 +62,7 @@
 /Users/liangke/CLionProjects/liangkeDemo/cmake-build-debug/ConstDemo/CMakeFiles/edit_cache.dir
 /Users/liangke/CLionProjects/liangkeDemo/cmake-build-debug/ConstDemo/CMakeFiles/rebuild_cache.dir
 /Users/liangke/CLionProjects/liangkeDemo/cmake-build-debug/STLDemo/CMakeFiles/vectorDemo.dir
+/Users/liangke/CLionProjects/liangkeDemo/cmake-build-debug/STLDemo/CMakeFiles/setDemo.dir
+/Users/liangke/CLionProjects/liangkeDemo/cmake-build-debug/STLDemo/CMakeFiles/pairDemo.dir
 /Users/liangke/CLionProjects/liangkeDemo/cmake-build-debug/STLDemo/CMakeFiles/edit_cache.dir
 /Users/liangke/CLionProjects/liangkeDemo/cmake-build-debug/STLDemo/CMakeFiles/rebuild_cache.dir

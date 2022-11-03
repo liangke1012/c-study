@@ -1747,6 +1747,70 @@ build STLDemo/vectorDemo: CXX_EXECUTABLE_LINKER__vectorDemo_Debug STLDemo/CMakeF
   TARGET_FILE = STLDemo/vectorDemo
   TARGET_PDB = vectorDemo.dbg
 
+# =============================================================================
+# Object build statements for EXECUTABLE target setDemo
+
+
+#############################################
+# Order-only phony target for setDemo
+
+build cmake_object_order_depends_target_setDemo: phony || STLDemo/CMakeFiles/setDemo.dir
+
+build STLDemo/CMakeFiles/setDemo.dir/setDemo.cpp.o: CXX_COMPILER__setDemo_Debug /Users/liangke/CLionProjects/liangkeDemo/STLDemo/setDemo.cpp || cmake_object_order_depends_target_setDemo
+  DEP_FILE = STLDemo/CMakeFiles/setDemo.dir/setDemo.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -std=gnu++14
+  INCLUDES = -I/Users/liangke/CLionProjects/liangkeDemo/STLDemo/.
+  OBJECT_DIR = STLDemo/CMakeFiles/setDemo.dir
+  OBJECT_FILE_DIR = STLDemo/CMakeFiles/setDemo.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target setDemo
+
+
+#############################################
+# Link the executable STLDemo/setDemo
+
+build STLDemo/setDemo: CXX_EXECUTABLE_LINKER__setDemo_Debug STLDemo/CMakeFiles/setDemo.dir/setDemo.cpp.o
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk
+  OBJECT_DIR = STLDemo/CMakeFiles/setDemo.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = STLDemo/setDemo
+  TARGET_PDB = setDemo.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target pairDemo
+
+
+#############################################
+# Order-only phony target for pairDemo
+
+build cmake_object_order_depends_target_pairDemo: phony || STLDemo/CMakeFiles/pairDemo.dir
+
+build STLDemo/CMakeFiles/pairDemo.dir/pairDemo.cpp.o: CXX_COMPILER__pairDemo_Debug /Users/liangke/CLionProjects/liangkeDemo/STLDemo/pairDemo.cpp || cmake_object_order_depends_target_pairDemo
+  DEP_FILE = STLDemo/CMakeFiles/pairDemo.dir/pairDemo.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -std=gnu++14
+  INCLUDES = -I/Users/liangke/CLionProjects/liangkeDemo/STLDemo/.
+  OBJECT_DIR = STLDemo/CMakeFiles/pairDemo.dir
+  OBJECT_FILE_DIR = STLDemo/CMakeFiles/pairDemo.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target pairDemo
+
+
+#############################################
+# Link the executable STLDemo/pairDemo
+
+build STLDemo/pairDemo: CXX_EXECUTABLE_LINKER__pairDemo_Debug STLDemo/CMakeFiles/pairDemo.dir/pairDemo.cpp.o
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk
+  OBJECT_DIR = STLDemo/CMakeFiles/pairDemo.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = STLDemo/pairDemo
+  TARGET_PDB = pairDemo.dbg
+
 
 #############################################
 # Utility command for edit_cache
@@ -1825,6 +1889,10 @@ build operator07: phony Demo03/operator07
 
 build opertor: phony Demo03/opertor
 
+build pairDemo: phony STLDemo/pairDemo
+
+build setDemo: phony STLDemo/setDemo
+
 build swap02: phony memoryDemo/swap02
 
 build thisPtrDemo: phony classDemo/thisPtrDemo
@@ -1880,7 +1948,7 @@ build Demo03/all: phony Demo03/inherit Demo03/demo2 Demo03/opertor Demo03/operat
 #############################################
 # Folder: /Users/liangke/CLionProjects/liangkeDemo/cmake-build-debug/STLDemo
 
-build STLDemo/all: phony STLDemo/vectorDemo
+build STLDemo/all: phony STLDemo/vectorDemo STLDemo/setDemo STLDemo/pairDemo
 
 # =============================================================================
 
