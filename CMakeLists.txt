@@ -12,6 +12,7 @@ ADD_SUBDIRECTORY(classDemo)
 ADD_SUBDIRECTORY(memoryDemo)
 ADD_SUBDIRECTORY(ConstDemo)
 ADD_SUBDIRECTORY(STLDemo)
+ADD_SUBDIRECTORY(StringDemo)
 
 add_executable(liangkeDemo main.cpp)
 add_executable(main main.cpp)

@@ -1687,6 +1687,70 @@ build ConstDemo/dem0006: CXX_EXECUTABLE_LINKER__dem0006_Debug ConstDemo/CMakeFil
   TARGET_FILE = ConstDemo/dem0006
   TARGET_PDB = dem0006.dbg
 
+# =============================================================================
+# Object build statements for EXECUTABLE target dem0007
+
+
+#############################################
+# Order-only phony target for dem0007
+
+build cmake_object_order_depends_target_dem0007: phony || ConstDemo/CMakeFiles/dem0007.dir
+
+build ConstDemo/CMakeFiles/dem0007.dir/demo007.cpp.o: CXX_COMPILER__dem0007_Debug /Users/liangke/CLionProjects/liangkeDemo/ConstDemo/demo007.cpp || cmake_object_order_depends_target_dem0007
+  DEP_FILE = ConstDemo/CMakeFiles/dem0007.dir/demo007.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -std=gnu++14
+  INCLUDES = -I/Users/liangke/CLionProjects/liangkeDemo/ConstDemo/.
+  OBJECT_DIR = ConstDemo/CMakeFiles/dem0007.dir
+  OBJECT_FILE_DIR = ConstDemo/CMakeFiles/dem0007.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target dem0007
+
+
+#############################################
+# Link the executable ConstDemo/dem0007
+
+build ConstDemo/dem0007: CXX_EXECUTABLE_LINKER__dem0007_Debug ConstDemo/CMakeFiles/dem0007.dir/demo007.cpp.o
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk
+  OBJECT_DIR = ConstDemo/CMakeFiles/dem0007.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = ConstDemo/dem0007
+  TARGET_PDB = dem0007.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target moveDemo
+
+
+#############################################
+# Order-only phony target for moveDemo
+
+build cmake_object_order_depends_target_moveDemo: phony || ConstDemo/CMakeFiles/moveDemo.dir
+
+build ConstDemo/CMakeFiles/moveDemo.dir/moveDemo.cpp.o: CXX_COMPILER__moveDemo_Debug /Users/liangke/CLionProjects/liangkeDemo/ConstDemo/moveDemo.cpp || cmake_object_order_depends_target_moveDemo
+  DEP_FILE = ConstDemo/CMakeFiles/moveDemo.dir/moveDemo.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -std=gnu++14
+  INCLUDES = -I/Users/liangke/CLionProjects/liangkeDemo/ConstDemo/.
+  OBJECT_DIR = ConstDemo/CMakeFiles/moveDemo.dir
+  OBJECT_FILE_DIR = ConstDemo/CMakeFiles/moveDemo.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target moveDemo
+
+
+#############################################
+# Link the executable ConstDemo/moveDemo
+
+build ConstDemo/moveDemo: CXX_EXECUTABLE_LINKER__moveDemo_Debug ConstDemo/CMakeFiles/moveDemo.dir/moveDemo.cpp.o
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk
+  OBJECT_DIR = ConstDemo/CMakeFiles/moveDemo.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = ConstDemo/moveDemo
+  TARGET_PDB = moveDemo.dbg
+
 
 #############################################
 # Utility command for edit_cache
@@ -1835,6 +1899,66 @@ build STLDemo/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
 build STLDemo/rebuild_cache: phony STLDemo/CMakeFiles/rebuild_cache.util
 
 # =============================================================================
+# Write statements declared in CMakeLists.txt:
+# /Users/liangke/CLionProjects/liangkeDemo/CMakeLists.txt
+# =============================================================================
+
+# =============================================================================
+# Object build statements for EXECUTABLE target stringdemo01
+
+
+#############################################
+# Order-only phony target for stringdemo01
+
+build cmake_object_order_depends_target_stringdemo01: phony || StringDemo/CMakeFiles/stringdemo01.dir
+
+build StringDemo/CMakeFiles/stringdemo01.dir/stringdemo01.cpp.o: CXX_COMPILER__stringdemo01_Debug /Users/liangke/CLionProjects/liangkeDemo/StringDemo/stringdemo01.cpp || cmake_object_order_depends_target_stringdemo01
+  DEP_FILE = StringDemo/CMakeFiles/stringdemo01.dir/stringdemo01.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -std=gnu++14
+  INCLUDES = -I/Users/liangke/CLionProjects/liangkeDemo/StringDemo/.
+  OBJECT_DIR = StringDemo/CMakeFiles/stringdemo01.dir
+  OBJECT_FILE_DIR = StringDemo/CMakeFiles/stringdemo01.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target stringdemo01
+
+
+#############################################
+# Link the executable StringDemo/stringdemo01
+
+build StringDemo/stringdemo01: CXX_EXECUTABLE_LINKER__stringdemo01_Debug StringDemo/CMakeFiles/stringdemo01.dir/stringdemo01.cpp.o
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk
+  OBJECT_DIR = StringDemo/CMakeFiles/stringdemo01.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = StringDemo/stringdemo01
+  TARGET_PDB = stringdemo01.dbg
+
+
+#############################################
+# Utility command for edit_cache
+
+build StringDemo/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /Users/liangke/CLionProjects/liangkeDemo/cmake-build-debug/StringDemo && "/Users/liangke/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/222.4345.21/CLion.app/Contents/bin/cmake/mac/bin/cmake" -E echo No\ interactive\ CMake\ dialog\ available.
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build StringDemo/edit_cache: phony StringDemo/CMakeFiles/edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build StringDemo/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /Users/liangke/CLionProjects/liangkeDemo/cmake-build-debug/StringDemo && "/Users/liangke/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/222.4345.21/CLion.app/Contents/bin/cmake/mac/bin/cmake" --regenerate-during-build -S/Users/liangke/CLionProjects/liangkeDemo -B/Users/liangke/CLionProjects/liangkeDemo/cmake-build-debug
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build StringDemo/rebuild_cache: phony StringDemo/CMakeFiles/rebuild_cache.util
+
+# =============================================================================
 # Target aliases.
 
 build ClassModelDemo: phony classDemo/ClassModelDemo
@@ -1855,6 +1979,8 @@ build dem0005: phony ConstDemo/dem0005
 
 build dem0006: phony ConstDemo/dem0006
 
+build dem0007: phony ConstDemo/dem0007
+
 build demo001: phony ConstDemo/demo001
 
 build demo02: phony virtual/demo02
@@ -1872,6 +1998,8 @@ build inherit: phony Demo03/inherit
 build mallocDemo: phony memoryDemo/mallocDemo
 
 build memory01: phony memoryDemo/memory01
+
+build moveDemo: phony ConstDemo/moveDemo
 
 build namessp: phony Demo02/namessp
 
@@ -1893,6 +2021,8 @@ build pairDemo: phony STLDemo/pairDemo
 
 build setDemo: phony STLDemo/setDemo
 
+build stringdemo01: phony StringDemo/stringdemo01
+
 build swap02: phony memoryDemo/swap02
 
 build thisPtrDemo: phony classDemo/thisPtrDemo
@@ -1913,14 +2043,14 @@ build vectorDemo: phony STLDemo/vectorDemo
 #############################################
 # Folder: /Users/liangke/CLionProjects/liangkeDemo/cmake-build-debug
 
-build all: phony liangkeDemo main arraysDemo zhichuandi printDemo structDemo neicunModel neicunModel1 sceref cubes strtref strquote auto staticDemo Demo01/all Demo02/all Demo03/all map/all virtual/all classDemo/all memoryDemo/all ConstDemo/all STLDemo/all
+build all: phony liangkeDemo main arraysDemo zhichuandi printDemo structDemo neicunModel neicunModel1 sceref cubes strtref strquote auto staticDemo Demo01/all Demo02/all Demo03/all map/all virtual/all classDemo/all memoryDemo/all ConstDemo/all STLDemo/all StringDemo/all
 
 # =============================================================================
 
 #############################################
 # Folder: /Users/liangke/CLionProjects/liangkeDemo/cmake-build-debug/ConstDemo
 
-build ConstDemo/all: phony ConstDemo/demo001 ConstDemo/demp002 ConstDemo/dem0003 ConstDemo/dem0004 ConstDemo/dem0005 ConstDemo/dem0006
+build ConstDemo/all: phony ConstDemo/demo001 ConstDemo/demp002 ConstDemo/dem0003 ConstDemo/dem0004 ConstDemo/dem0005 ConstDemo/dem0006 ConstDemo/dem0007 ConstDemo/moveDemo
 
 # =============================================================================
 
@@ -1949,6 +2079,13 @@ build Demo03/all: phony Demo03/inherit Demo03/demo2 Demo03/opertor Demo03/operat
 # Folder: /Users/liangke/CLionProjects/liangkeDemo/cmake-build-debug/STLDemo
 
 build STLDemo/all: phony STLDemo/vectorDemo STLDemo/setDemo STLDemo/pairDemo
+
+# =============================================================================
+
+#############################################
+# Folder: /Users/liangke/CLionProjects/liangkeDemo/cmake-build-debug/StringDemo
+
+build StringDemo/all: phony StringDemo/stringdemo01
 
 # =============================================================================
 
@@ -1985,14 +2122,14 @@ build virtual/all: phony virtual/demo1 virtual/demo02
 #############################################
 # Re-run CMake if any of its inputs changed.
 
-build build.ninja: RERUN_CMAKE | ../CMakeLists.txt ../ConstDemo/CMakeLists.txt ../Demo01/CMakeLists.txt ../Demo02/CMakeLists.txt ../Demo03/CMakeLists.txt ../STLDemo/CMakeLists.txt ../classDemo/CMakeLists.txt ../map/CMakeLists.txt ../memoryDemo/CMakeLists.txt ../virtual/CMakeLists.txt /Users/liangke/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/222.4345.21/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeCInformation.cmake /Users/liangke/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/222.4345.21/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeCXXInformation.cmake /Users/liangke/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/222.4345.21/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeCommonLanguageInclude.cmake /Users/liangke/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/222.4345.21/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeGenericSystem.cmake /Users/liangke/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/222.4345.21/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeInitializeConfigs.cmake /Users/liangke/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/222.4345.21/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeLanguageInformation.cmake /Users/liangke/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/222.4345.21/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeSystemSpecificInformation.cmake /Users/liangke/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/222.4345.21/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeSystemSpecificInitialize.cmake /Users/liangke/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/222.4345.21/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/AppleClang-C.cmake /Users/liangke/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/222.4345.21/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/AppleClang-CXX.cmake /Users/liangke/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/222.4345.21/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/CMakeCommonCompilerMacros.cmake /Users/liangke/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/222.4345.21/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/Clang.cmake /Users/liangke/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/222.4345.21/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/GNU.cmake /Users/liangke/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/222.4345.21/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/Apple-AppleClang-C.cmake /Users/liangke/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/222.4345.21/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/Apple-AppleClang-CXX.cmake /Users/liangke/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/222.4345.21/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/Apple-Clang-C.cmake /Users/liangke/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/222.4345.21/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/Apple-Clang-CXX.cmake /Users/liangke/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/222.4345.21/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/Apple-Clang.cmake /Users/liangke/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/222.4345.21/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/Darwin-Initialize.cmake /Users/liangke/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/222.4345.21/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/Darwin.cmake /Users/liangke/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/222.4345.21/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/UnixPaths.cmake CMakeCache.txt CMakeFiles/3.23.2/CMakeCCompiler.cmake CMakeFiles/3.23.2/CMakeCXXCompiler.cmake CMakeFiles/3.23.2/CMakeSystem.cmake
+build build.ninja: RERUN_CMAKE | ../CMakeLists.txt ../ConstDemo/CMakeLists.txt ../Demo01/CMakeLists.txt ../Demo02/CMakeLists.txt ../Demo03/CMakeLists.txt ../STLDemo/CMakeLists.txt ../StringDemo/CMakeLists.txt ../classDemo/CMakeLists.txt ../map/CMakeLists.txt ../memoryDemo/CMakeLists.txt ../virtual/CMakeLists.txt /Users/liangke/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/222.4345.21/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeCInformation.cmake /Users/liangke/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/222.4345.21/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeCXXInformation.cmake /Users/liangke/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/222.4345.21/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeCommonLanguageInclude.cmake /Users/liangke/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/222.4345.21/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeGenericSystem.cmake /Users/liangke/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/222.4345.21/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeInitializeConfigs.cmake /Users/liangke/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/222.4345.21/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeLanguageInformation.cmake /Users/liangke/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/222.4345.21/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeSystemSpecificInformation.cmake /Users/liangke/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/222.4345.21/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeSystemSpecificInitialize.cmake /Users/liangke/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/222.4345.21/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/AppleClang-C.cmake /Users/liangke/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/222.4345.21/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/AppleClang-CXX.cmake /Users/liangke/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/222.4345.21/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/CMakeCommonCompilerMacros.cmake /Users/liangke/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/222.4345.21/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/Clang.cmake /Users/liangke/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/222.4345.21/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/GNU.cmake /Users/liangke/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/222.4345.21/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/Apple-AppleClang-C.cmake /Users/liangke/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/222.4345.21/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/Apple-AppleClang-CXX.cmake /Users/liangke/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/222.4345.21/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/Apple-Clang-C.cmake /Users/liangke/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/222.4345.21/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/Apple-Clang-CXX.cmake /Users/liangke/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/222.4345.21/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/Apple-Clang.cmake /Users/liangke/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/222.4345.21/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/Darwin-Initialize.cmake /Users/liangke/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/222.4345.21/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/Darwin.cmake /Users/liangke/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/222.4345.21/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/UnixPaths.cmake CMakeCache.txt CMakeFiles/3.23.2/CMakeCCompiler.cmake CMakeFiles/3.23.2/CMakeCXXCompiler.cmake CMakeFiles/3.23.2/CMakeSystem.cmake
   pool = console
 
 
 #############################################
 # A missing CMake input file is not an error.
 
-build ../CMakeLists.txt ../ConstDemo/CMakeLists.txt ../Demo01/CMakeLists.txt ../Demo02/CMakeLists.txt ../Demo03/CMakeLists.txt ../STLDemo/CMakeLists.txt ../classDemo/CMakeLists.txt ../map/CMakeLists.txt ../memoryDemo/CMakeLists.txt ../virtual/CMakeLists.txt /Users/liangke/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/222.4345.21/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeCInformation.cmake /Users/liangke/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/222.4345.21/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeCXXInformation.cmake /Users/liangke/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/222.4345.21/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeCommonLanguageInclude.cmake /Users/liangke/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/222.4345.21/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeGenericSystem.cmake /Users/liangke/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/222.4345.21/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeInitializeConfigs.cmake /Users/liangke/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/222.4345.21/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeLanguageInformation.cmake /Users/liangke/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/222.4345.21/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeSystemSpecificInformation.cmake /Users/liangke/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/222.4345.21/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeSystemSpecificInitialize.cmake /Users/liangke/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/222.4345.21/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/AppleClang-C.cmake /Users/liangke/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/222.4345.21/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/AppleClang-CXX.cmake /Users/liangke/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/222.4345.21/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/CMakeCommonCompilerMacros.cmake /Users/liangke/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/222.4345.21/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/Clang.cmake /Users/liangke/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/222.4345.21/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/GNU.cmake /Users/liangke/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/222.4345.21/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/Apple-AppleClang-C.cmake /Users/liangke/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/222.4345.21/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/Apple-AppleClang-CXX.cmake /Users/liangke/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/222.4345.21/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/Apple-Clang-C.cmake /Users/liangke/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/222.4345.21/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/Apple-Clang-CXX.cmake /Users/liangke/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/222.4345.21/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/Apple-Clang.cmake /Users/liangke/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/222.4345.21/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/Darwin-Initialize.cmake /Users/liangke/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/222.4345.21/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/Darwin.cmake /Users/liangke/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/222.4345.21/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/UnixPaths.cmake CMakeCache.txt CMakeFiles/3.23.2/CMakeCCompiler.cmake CMakeFiles/3.23.2/CMakeCXXCompiler.cmake CMakeFiles/3.23.2/CMakeSystem.cmake: phony
+build ../CMakeLists.txt ../ConstDemo/CMakeLists.txt ../Demo01/CMakeLists.txt ../Demo02/CMakeLists.txt ../Demo03/CMakeLists.txt ../STLDemo/CMakeLists.txt ../StringDemo/CMakeLists.txt ../classDemo/CMakeLists.txt ../map/CMakeLists.txt ../memoryDemo/CMakeLists.txt ../virtual/CMakeLists.txt /Users/liangke/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/222.4345.21/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeCInformation.cmake /Users/liangke/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/222.4345.21/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeCXXInformation.cmake /Users/liangke/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/222.4345.21/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeCommonLanguageInclude.cmake /Users/liangke/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/222.4345.21/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeGenericSystem.cmake /Users/liangke/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/222.4345.21/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeInitializeConfigs.cmake /Users/liangke/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/222.4345.21/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeLanguageInformation.cmake /Users/liangke/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/222.4345.21/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeSystemSpecificInformation.cmake /Users/liangke/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/222.4345.21/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeSystemSpecificInitialize.cmake /Users/liangke/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/222.4345.21/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/AppleClang-C.cmake /Users/liangke/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/222.4345.21/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/AppleClang-CXX.cmake /Users/liangke/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/222.4345.21/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/CMakeCommonCompilerMacros.cmake /Users/liangke/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/222.4345.21/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/Clang.cmake /Users/liangke/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/222.4345.21/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/GNU.cmake /Users/liangke/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/222.4345.21/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/Apple-AppleClang-C.cmake /Users/liangke/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/222.4345.21/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/Apple-AppleClang-CXX.cmake /Users/liangke/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/222.4345.21/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/Apple-Clang-C.cmake /Users/liangke/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/222.4345.21/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/Apple-Clang-CXX.cmake /Users/liangke/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/222.4345.21/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/Apple-Clang.cmake /Users/liangke/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/222.4345.21/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/Darwin-Initialize.cmake /Users/liangke/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/222.4345.21/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/Darwin.cmake /Users/liangke/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/222.4345.21/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/UnixPaths.cmake CMakeCache.txt CMakeFiles/3.23.2/CMakeCCompiler.cmake CMakeFiles/3.23.2/CMakeCXXCompiler.cmake CMakeFiles/3.23.2/CMakeSystem.cmake: phony
 
 
 #############################################

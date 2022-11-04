@@ -59,6 +59,8 @@
 /Users/liangke/CLionProjects/liangkeDemo/cmake-build-debug/ConstDemo/CMakeFiles/dem0004.dir
 /Users/liangke/CLionProjects/liangkeDemo/cmake-build-debug/ConstDemo/CMakeFiles/dem0005.dir
 /Users/liangke/CLionProjects/liangkeDemo/cmake-build-debug/ConstDemo/CMakeFiles/dem0006.dir
+/Users/liangke/CLionProjects/liangkeDemo/cmake-build-debug/ConstDemo/CMakeFiles/dem0007.dir
+/Users/liangke/CLionProjects/liangkeDemo/cmake-build-debug/ConstDemo/CMakeFiles/moveDemo.dir
 /Users/liangke/CLionProjects/liangkeDemo/cmake-build-debug/ConstDemo/CMakeFiles/edit_cache.dir
 /Users/liangke/CLionProjects/liangkeDemo/cmake-build-debug/ConstDemo/CMakeFiles/rebuild_cache.dir
 /Users/liangke/CLionProjects/liangkeDemo/cmake-build-debug/STLDemo/CMakeFiles/vectorDemo.dir
@@ -66,3 +68,6 @@
 /Users/liangke/CLionProjects/liangkeDemo/cmake-build-debug/STLDemo/CMakeFiles/pairDemo.dir
 /Users/liangke/CLionProjects/liangkeDemo/cmake-build-debug/STLDemo/CMakeFiles/edit_cache.dir
 /Users/liangke/CLionProjects/liangkeDemo/cmake-build-debug/STLDemo/CMakeFiles/rebuild_cache.dir
+/Users/liangke/CLionProjects/liangkeDemo/cmake-build-debug/StringDemo/CMakeFiles/stringdemo01.dir
+/Users/liangke/CLionProjects/liangkeDemo/cmake-build-debug/StringDemo/CMakeFiles/edit_cache.dir
+/Users/liangke/CLionProjects/liangkeDemo/cmake-build-debug/StringDemo/CMakeFiles/rebuild_cache.dir
