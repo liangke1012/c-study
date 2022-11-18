@@ -69,5 +69,10 @@
 /Users/liangke/CLionProjects/liangkeDemo/cmake-build-debug/STLDemo/CMakeFiles/edit_cache.dir
 /Users/liangke/CLionProjects/liangkeDemo/cmake-build-debug/STLDemo/CMakeFiles/rebuild_cache.dir
 /Users/liangke/CLionProjects/liangkeDemo/cmake-build-debug/StringDemo/CMakeFiles/stringdemo01.dir
+/Users/liangke/CLionProjects/liangkeDemo/cmake-build-debug/StringDemo/CMakeFiles/allOfdemo.dir
+/Users/liangke/CLionProjects/liangkeDemo/cmake-build-debug/StringDemo/CMakeFiles/autodemo.dir
 /Users/liangke/CLionProjects/liangkeDemo/cmake-build-debug/StringDemo/CMakeFiles/edit_cache.dir
 /Users/liangke/CLionProjects/liangkeDemo/cmake-build-debug/StringDemo/CMakeFiles/rebuild_cache.dir
+/Users/liangke/CLionProjects/liangkeDemo/cmake-build-debug/Niminghanshu/CMakeFiles/niming.dir
+/Users/liangke/CLionProjects/liangkeDemo/cmake-build-debug/Niminghanshu/CMakeFiles/edit_cache.dir
+/Users/liangke/CLionProjects/liangkeDemo/cmake-build-debug/Niminghanshu/CMakeFiles/rebuild_cache.dir
